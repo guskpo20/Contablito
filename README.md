@@ -15,8 +15,6 @@
 ***
 Web application that stores your transactions and displays them with taxes
 
-## Images
-***
 ![contablito1](https://user-images.githubusercontent.com/75509324/193961496-1ddba0b1-f029-4089-98bd-bf106aa6562f.png)
 ![contablito2](https://user-images.githubusercontent.com/75509324/193961502-96a82532-cb3f-414c-a7c4-5ab4153bfbc1.png)
 ![contablito3](https://user-images.githubusercontent.com/75509324/193961507-4d1b815c-a384-485a-b147-3ee05e995437.png)
