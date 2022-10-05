@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contablito</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h2>Contablito</h2>
+    <div id="datos">
+      <ul>
+        <li>
+          <label id="description" for="description">Descripción</label>
+          <input id="descriptionText" type="text" name="description" />
+        </li>
+        <li>
+          <label id="transaction" for="descriptionType">Tipo Transacción</label>
+          <input
+            type="radio"
+            name="descriptionType"
+            id="inputCompra"
+            value="C"
+            checked
+          /><span>Compra</span>
+          <input
+            type="radio"
+            name="descriptionType"
+            id="inputVenta"
+            value="V"
+          /><span>Venta</span>
+        </li>
+        <li>
+          <label id="iva" for="ivaType">Tipo IVA</label>
+          <input
+            type="radio"
+            name="ivaType"
+            id="ivaBasico"
+            value="B"
+            checked
+          /><span>Básico</span>
+          <input type="radio" name="ivaType" id="ivaMinimo" value="M" /><span
+            >Mínimo</span
+          >
+          <input type="radio" name="ivaType" id="ivaExtento" value="B" /><span
+            >Exento</span
+          >
+        </li>
+        <li>
+          <label id="subTotal" for="subTotal">Subtotal($)</label>
+          <input id="submount" type="number" name="mount" />
+          <p>Total($): <span id="resultado"></span></p>
+          <button id="ingresar" type="button">Ingresar</button>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <table>
+        <thead>
+          <th>Descripción</th>
+          <th>Tipo</th>
+          <th>Subtotal ($)</th>
+          <th>IVA ($)</th>
+          <th>Total (IVA inc)</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div id="capital">
+      <ul>
+        <li>Total Compras: <span id="compras"></span></li>
+        <li>Total Ventas: <span id="ventas"></span></li>
+      </ul>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
